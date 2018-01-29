@@ -5,11 +5,9 @@ Then this might be for you.
 
 ### What's different from `fatlabel`?
 [dosfstools](https://github.com/dosfstools/dosfstools)' `fatlabel` program writes
-this label too, so what's the difference?
-
-Yes, it does. But only when the partition is __unmounted__ or just being
-created. `fatattr-label` simply makes the label writeable while the partition
-is being used.
+this label too, so what's the difference? Well, it only write the label when the
+partition is __unmounted__ or while created. `fatattr-label` simply makes the label
+writeable while the partition is being used.
 
 ### How to build
 `make`
@@ -41,7 +39,9 @@ Linux as of now:
 
 
 FAT12, FAT16 and FAT32 are supported, on 32bit and 64bit systems. You need to
-apply the provided patch and build your kernel.
+apply the provided patch and build your kernel. The patch is included in this
+source repository and applies to any version of Linux, from at least v3.0 up to
+Linux v4.15.
 
 I promised not to publish this quite yet. If you are overly interested in
 having support for this now, feel free to [contact me](mailto:martink@posteo.de).
