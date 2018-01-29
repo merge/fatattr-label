@@ -1,5 +1,5 @@
 # fatattr_label
-Linux tool `fatattr-label` to change a __mounted__ FAT filesystem partition's
+Linux example tool to change a __mounted__ FAT filesystem partition's
 label while it is being used. Want a USB Stick's name to be writeable?
 Then this might be for you.
 
