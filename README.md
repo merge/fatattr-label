@@ -10,7 +10,10 @@ partition is __unmounted__ or while created. `fatattr_label` simply makes the la
 writeable while the partition is being used.
 
 ### How to build
-`make`
+
+		./autogen.sh
+		make
+
 
 ### How to use
 Run `./fatattr_label` without parameters to see how to use it. This should
@@ -28,8 +31,8 @@ look like so
 		   df --output=source,fstype,target | grep -E 'msdos|fat'
 
 
-`vfat`, `msdos` and `fat` types are supported. To make this tool available,
-of course just put it in your `PATH` environment.
+`vfat`, `msdos` and `fat` types are supported. You can of course `make install`
+it.
 
 ### Linux support
 This tool is using the following ioctl interface that is *not* part of mainline
