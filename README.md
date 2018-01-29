@@ -1,4 +1,4 @@
-# fatattr-label
+# fatattr_label
 Linux tool `fatattr-label` to change a __mounted__ FAT filesystem partition's
 label while it is being used. Want a USB Stick's name to be writeable?
 Then this might be for you.
@@ -6,21 +6,21 @@ Then this might be for you.
 ### What's different from `fatlabel`?
 [dosfstools](https://github.com/dosfstools/dosfstools)' `fatlabel` program writes
 this label too, so what's the difference? Well, it only write the label when the
-partition is __unmounted__ or while created. `fatattr-label` simply makes the label
+partition is __unmounted__ or while created. `fatattr_label` simply makes the label
 writeable while the partition is being used.
 
 ### How to build
 `make`
 
 ### How to use
-Run `./fatattr-label` without parameters to see how to use it. This should
+Run `./fatattr_label` without parameters to see how to use it. This should
 look like so
 
 
 		Change label:
-		   fatattr-label [mountpoint] [label]
+		   fatattr_label [mountpoint] [label]
 		Show label:
-		   fatattr-label [mountpoint]
+		   fatattr_label [mountpoint]
 
 		An example for listing available filesystems and their
 		mountpoints would be:
