@@ -43,8 +43,7 @@ Linux as of now:
 
 FAT12, FAT16 and FAT32 are supported, on 32bit and 64bit systems. You need to
 apply the provided patch and build your kernel. The patch is included in this
-source repository and applies to any version of Linux, from at least v3.0 up to
-the most recent version 4.x.
+source repository and applies to the latest Linux release.
 
 I promised not to publish this quite yet. If you are overly interested in
 having support for this now, feel free to [contact me](mailto:martink@posteo.de).
